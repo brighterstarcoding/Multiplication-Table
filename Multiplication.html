@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Multiplication Table </title>
+  <link rel="stylesheet" href="Multiplication.css">
+
+
+  
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>Multiplication Table By Brighterstar</h1>
+        <p>Created by bright  <strong>2 × 2 = 4</strong></p>
+      </div>
+    </header>
+
+    <div class="controls">
+      <div class="field">
+        <label for="start">Start</label>
+        <input id="start" type="number" min="0" value="1">
+      </div>
+
+      <div class="field">
+        <label for="end">End</label>
+        <input id="end" type="number" min="0" value="10">
+      </div>
+
+      <div class="field">
+        <label for="maxMul">Max multiplier</label>
+        <input id="maxMul" type="number" min="1" value="12">
+      </div>
+
+      <div class="options">
+        <button id="generate" class="btn">Generate</button>
+        <button id="clear" class="secondary">Clear</button>
+      </div>
+    </div>
+
+    <div class="grid-wrap">
+      <div id="grid" class="grid" aria-live="polite"></div>
+    </div>
+
+    <div class="footer">
+      <div>Bright Tip: set "Start" to 2 if you want columns starting from 2 (e.g. 2×2, 2×3...).</div>
+      <div id="count">0 cells</div>
+    </div>
+  </div>
+
+
+  <script src="Multiplication.js"></script>
+</body>
+</html>
